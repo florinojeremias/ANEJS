@@ -27,6 +27,7 @@ Vue.component('form-component', require('./components/Input.vue').default);
 Vue.component('table-component', require('./components/Table.vue').default);
 Vue.component('menu-component',require('./components/HomePage/Card.vue').default);
 Vue.component('footer-component',require('./components/HomePage/Footer.vue').default);
+Vue.component('modal-component', require('./components/Modal.vue').default);
 
 //other components
 Vue.component('contact-component', require('./components/HomePage/ContactUs.vue').default);
@@ -35,7 +36,9 @@ Vue.component('member-component',require('./components/Member/Form.vue').default
 Vue.component('history-component', require('./components/HomePage/Histories.vue').default);
 Vue.component('admintable-component',require('./components/AdminPage/Table.vue').default);
 Vue.component('membercc-component', require('./components/AdminPage/MembrocCargo.vue').default);
-Vue.component('pedidoajuda-component', require('./components/AdminPage/Ajuda/PedidosPedentes.vue').default);
+Vue.component('ajuda-component', require('./components/AdminPage/Ajuda/PedidosPedentes.vue').default);
+Vue.component('actividade-component', require('./components/AdminPage/Actividade/Index.vue').default);
+Vue.component('beneficiario-component', require('./components/AdminPage/Index.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

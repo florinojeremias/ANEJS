@@ -33,14 +33,16 @@ Route::resource('/membro', "MembroController");
 //Admin routes
 Route::get('/admin',"HomeController@admin");
 
-Route::get('/admin/membros_ccargo',"HomeController@membros_ccargo");
+Route::get('/admin/membros',"HomeController@membros");
 
 Route::get('/admin/candmembros','HomeController@candMembros');
+
+Route::get('/admin/actividades', 'HomeController@adminactivities');
 
 
 //Route::get('/admi/membroccargo','HomeController@membroc');
 
-//Admin Hel routes
+//Admin Help routes
 
-Route::get('/admin/ajudapendente','HomeController@pajuda');
+Route::get('/admin/ajuda','HomeController@pajuda');
 

@@ -127,47 +127,9 @@
         </div>
 
     </div>
-    <!--Tabela de  membros-->
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-success"> Lista de Testemunhas</h6>    
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover" width="100%" id="dataTable" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th> id</th>
-                            <th> Nome do beneficiario</th>
-                            <th>Descrição</th>
-                            <th>Morada</th>
-                            <th>Data da doação</th>
-                            <th>Accoes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th> id</th>
-                            <th> Nome do beneficiario</th>
-                            <th>Descrição</th>
-                            <th>Morada</th>
-                            <th>Data da doação</th>
-                            <th>Accoes</th>
-                        </tr>
-                    </tfoot>
-
-
-                </table>
-
-            </div>
-
-        </div>
-        <div class="card-footer">
-            <button class="btn btn-success btn-sn float-right">Adicionar</button>
-        </div>
+    <!--Tabela de Beneficiarios-->
+    <beneficiario-component></beneficiario-component>
+   
 
 
     </div>

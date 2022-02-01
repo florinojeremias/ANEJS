@@ -32,11 +32,11 @@
             <!--Page Wrapper content-->
             <div id="wrapper">
                 <!--Inicio do sidebar-->
-                <ul class="navbar-nav bg-success sidebar sidebar-dark accordion" id="accordionSidebar">
+                <ul class="navbar-nav bg-success sidebar  sidebar-dark accordion" id="accordionSidebar" >
                     <!--Incicio do sidebar Brand-->
                     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/home">
                         <div class="sidebar-brand-icon">
-                            <i class="fas fa-laugh-wink"></i>
+                          <img src=" {{ asset('img/anejslogo.png')}}" alt="" style="width: 70px;">
                         </div>
                         <div class="sidebar-brand-text mx-3">ANEJS ADMIN </div>
                     </a>
@@ -46,7 +46,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/admin">
                             <i class="fas fa-fw fa-tachometer-alt"></i>
-                            <span>Dashboard</span>
+                            <span style="color:ba" >Dashboard</span>
                         </a>
                         <hr class="sidebar-divider " style="width: 100%">
                     </li>
@@ -58,13 +58,12 @@
                     <li class="nav-item">
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fas fa- fw fa-cog"></i>
-                            <span class="h4">Membros</span>
+                            <span class="h4" >Membros</span>
                         </a>
                         
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                             <div class="bg-success  py-2 collapse-inner">
-                                <a class="collapse-item" href="/admin/membros_ccargo">Membros com Cargo</a>
-                                <a class="collapse-item" href="#">Membros sem Cargo</a>
+                                <a class="collapse-item" href="/admin/membros"> Gerir Membros </a>
                                 <a class="collapse-item" href="/admin/candmembros">Candidados a Membros</a>
                             </div>
 
@@ -80,8 +79,8 @@
                         
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-success  py-2 collapse-inner">
-                                <a class="collapse-item"  href="/admin/ajudapendente">Pedidos Pendentes</a>
-                                <a class="collapse-item" href="">Pedidos Resolvidos</a>
+                                <a class="collapse-item"  href="/admin/ajuda">Gerir Pedidos</a>
+                              
                     
                             </div>
 
@@ -97,8 +96,8 @@
                         
                         <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-success  py-2 collapse-inner">
-                                <a class="collapse-item"  href="">Doações Pendentes</a>
-                                <a class="collapse-item" href="">Doações Resolvidas</a>
+                                <a class="collapse-item"  href=""> Gerir Doações </a>
+                                <a class="collapse-item" href=""></a>
                     
                             </div>
 
@@ -114,8 +113,7 @@
                         
                         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-success  py-2 collapse-inner">
-                                <a class="collapse-item"  href="">Gerir Actividades</a>
-                                <a class="collapse-item" href="">Registar novas Actividades</a>
+                                <a class="collapse-item" href="/admin/actividades">Gerir Actividades</a>
                     
                             </div>
 

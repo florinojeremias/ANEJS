@@ -29,7 +29,7 @@
           <header class="header">
               <div class="header-inner">
                   <div class="container-fluid px-lg-5">
-                      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success">
+                      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success ">
                           <span class="logo">
                           <a class="navbar-brand" href="/">  
                               <img src="{{ asset('img/anejslogo.png')}}" class="img-fluid" alt="" style="width: 70px; margin:-3px 0px 0px 0px;">

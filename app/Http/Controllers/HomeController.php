@@ -41,11 +41,14 @@ class HomeController extends Controller
        return view('admin.membro.candiMembros');
    }
 
-   public function membros_ccargo(){
+   public function membros(){
        return view('admin.membro.membcomcargo');
    }
 
    public function pajuda(){
        return view('admin.ajuda.pajuda');
+   }
+   public function adminactivities(){
+       return view('admin.actividade.index');
    }
 }
