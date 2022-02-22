@@ -64,11 +64,11 @@
             <template v-slot:content>
                 <div class="form-group">
                     <label for="">Tema da Actividade</label>
-                   <input type="text" class="form-control" name="tema_actividae" placeholder="Insira o Tema da Actividade">
+                   <input type="text" class="form-control" name="tema_actividae" placeholder="Insira o Tema da Actividade" v-model="newItem.tema_actividae">
                 </div>
                  <div class="form-group">
                     <label for="">Endereço</label>
-                   <input type="text" class="form-control" name="endereco" placeholder="Insira o endereço ">
+                   <input type="text" class="form-control" name="endereco" placeholder="Insira o endereço " v-model="newItem.endereco">
                 </div>
                  <div class="form-group">
                     <label for="">Fotografia</label>
@@ -76,16 +76,16 @@
                 </div>
                  <div class="form-group">
                     <label for="">Descrição</label>
-                   <input type="text" class="form-control" name="descricao">
+                   <input type="text" class="form-control" name="descricao" v-model="newItem.descricao">
                 </div>
                 <div class="form-group">
                     <label for="">Data</label>
-                   <input type="date" class="form-control" name="data">
+                   <input type="date" class="form-control" name="data" v-model="newItem.data">
                 </div>
                 
             </template>
             <template v-slot:buttons>
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
                 <button type="button" class="btn btn-outline-success">Salvar</button>
             </template>
         </modal-component>
@@ -99,5 +99,20 @@
 export default {
     components:{Card},
     props:[],
+    data(){
+        return {
+            newItem:{
+                tema_actividae:'',
+                endereco:'',
+                fotografia:'',
+                descricao:'',
+                data:''
+
+
+
+            }
+        }
+    },
+
 }
 </script>

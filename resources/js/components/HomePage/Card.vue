@@ -166,7 +166,7 @@
             </div>
         
         </div>
-          <a href="a.com" class="p-2">
+          <a href="/activities" class="p-2">
         <button class="btn btn-outline-dark rounded-pill ">Verificar Todas</button>
         </a>
     

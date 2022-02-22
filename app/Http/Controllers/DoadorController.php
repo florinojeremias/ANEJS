@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateMembroRequest;
 use Illuminate\Http\Request;
 
-class MembroController extends Controller
+class DoadorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,7 +24,6 @@ class MembroController extends Controller
     public function create()
     {
         //
-        return view("membro.create");
     }
 
     /**
@@ -34,7 +32,7 @@ class MembroController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateMembroRequest $request)
+    public function store(Request $request)
     {
         //
     }

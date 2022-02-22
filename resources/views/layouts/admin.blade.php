@@ -97,8 +97,7 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-success  py-2 collapse-inner">
                                 <a class="collapse-item"  href=""> Gerir Doações </a>
-                                <a class="collapse-item" href=""></a>
-                    
+                                
                             </div>
 
                         </div>

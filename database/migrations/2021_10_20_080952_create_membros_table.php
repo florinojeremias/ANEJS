@@ -20,11 +20,16 @@ class CreateMembrosTable extends Migration
             $table->string('nome_pai');
             $table->enum('genero',['M','F']);
             $table->string('nacionalidade');
-            $table->enum('estado_civil',['solteiro','casado','divorciado','marital','viuvo']);
+            $table->enum('estado_civil',['solteiro','casado','separado','marital','viuvo']);
             $table->date('data_nascimento');
             $table->string('numero_documento_identificacao');
             $table->string('local_emissao');
             $table->string('contacto');
+            $table->string('endereco');
+            $table->string('cargo');
+            $table->string('profissao');
+            $table->string('imagem_doc');
+            $table->enum('estado',['0','1'])->default('0');
             $table->softDeletes('deleted_at');
             $table->timestamps();
         });

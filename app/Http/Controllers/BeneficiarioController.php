@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateMembroRequest;
+use App\beneficiario;
 use Illuminate\Http\Request;
 
-class MembroController extends Controller
+class BeneficiarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,7 +25,6 @@ class MembroController extends Controller
     public function create()
     {
         //
-        return view("membro.create");
     }
 
     /**
@@ -34,7 +33,7 @@ class MembroController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateMembroRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,7 +41,7 @@ class MembroController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\beneficiario  $beneficiario
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -53,10 +52,10 @@ class MembroController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\beneficiario  $beneficiario
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit( $id)
     {
         //
     }
@@ -65,7 +64,7 @@ class MembroController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\beneficiario  $beneficiario
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -76,7 +75,7 @@ class MembroController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\beneficiario  $beneficiario
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

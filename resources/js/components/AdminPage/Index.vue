@@ -43,32 +43,35 @@
             <template v-slot:content>
                 <div class="form-roup">
                     <label for="name"> Nome do beneficiario</label>
-                    <input type="text" class="form-control" placeholder="Nome do beneficiario">
+                    <input type="text" class="form-control" placeholder="Nome do beneficiario" v-model="newItem.nome_beneficiario">
+                    <h1>{{ newItem.nome_beneficiario}}</h1>
                 </div>
                 <div class="form-group">
                     <label for="name">Descrição</label>
-                    <input type="text" class="form-control" placeholder="descrição">
+                    <input type="text" class="form-control" placeholder="descrição" v-model="newItem.descricao">
                 
                 </div>
                  <div class="form-group">
                     <label for="name">Morada</label>
-                    <input type="text" class="form-control" placeholder="Morada">
+                    <input type="text" class="form-control" placeholder="Morada" v-model="newItem.morada">
                 
                 </div>
                 <div class="form-group">
                     <label for="name">Data da doação</label>
-                    <input type="date" class="form-control" placeholder="Morada">
+                    <input type="date" class="form-control" placeholder="Data da doação " v-model="newItem.data">
                 
                 </div>
                  <div class="form-group">
                     <label for="name">Fotografia</label>
-                    <input type="file" class="form-control" placeholder="Morada">
+                    <input type="file" class="form-control" placeholder="Imagem" >
                 
                 </div>
+
+
                 
             </template>
             <template v-slot:buttons>
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
                 <button type="button" class="btn btn-outline-success">Salvar</button>
             </template>
        
@@ -81,6 +84,19 @@
 </template>
 <script>
 export default {
+    props:[],
+    data(){
+        return {
+            newItem:{
+                nome_beneficiario:'',
+                descricao:'',
+                morada:'',
+                data:'',
+                fotografia:''
+
+            }
+        }
+    }
     
 }
 </script>
